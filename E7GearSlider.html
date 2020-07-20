@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <title>E7 Gear Calc</title>
 <style>
+    .grid-outer{
+    	display: grid;
+    	grid-template-columns: auto auto auto;
+        grid-gap: 5px;
+    }
     .grid-container
     {
         display: grid;
@@ -22,7 +27,7 @@
 <body>
     <h2>E7 Gear stats slider</h2>
     	<!--For LeftSide-->
-    	<div class="grid-container">
+    	<div class="grid-outer">
     	<div class="grid-container">
         	<div class="grid-item">Weapon</div>
         	<div class="grid-item">Helmet</div>
