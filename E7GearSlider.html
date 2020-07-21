@@ -8,7 +8,7 @@
     }
     .grid-container
     {
-        display: grid;
+        display: list;
         grid-template-columns: auto auto;
         background-color: #FFFFFF;
         padding: 4px;
@@ -20,29 +20,65 @@
         background-color: #FFFFFF;
         border: 1px solid #AAAAAA;
         padding: 2px;
-        font-size: 20px;
+        font-size: 30px;
         border-radius: 10px;
+    }
+    .mainstatsize {
+    	font-size: 20px;
     }
 </style>
 <body>
     <h2>E7 Gear stats slider</h2>
     	<!--For LeftSide-->
     	<div class="grid-outer">
-    	<div class="grid-container">
-        	<div class="grid-item">Weapon</div>
-        	<div class="grid-item">Helmet</div>
-        	<div class="grid-item">Chestplate</div>
-    	</div>
+    		<div class="grid-container">
+        		<div class="grid-item"><b>Weapon</b>
+            		<select name="level" id="gear-level">
+            			<option>Lv 85</option>
+            			<option>Lv 90</option>
+            		</select>
+            	</div>
+            	<span class="mainstatsize">Attack:</span>
+        		<div class="grid-item"><b>Helmet</b>
+            		<select name="level" id="gear-level">
+            			<option>Lv 85</option>
+            			<option>Lv 90</option>
+            		</select>
+            	</div>
+            	<span class="mainstatsize">Health:</span>
+        		<div class="grid-item"><b>Armor</b>
+            		<select name="level" id="gear-level">
+            			<option>Lv 85</option>
+            			<option>Lv 90</option>
+            		</select>
+            	</div>
+            	<span class="mainstatsize">Defense:</span>
+    		</div>
     	<!--For RightSide-->
-    	<div class="grid-container">
-        	<div class="grid-item">Necklace</div>
-        	<div class="grid-item">Ring</div>
-        	<div class="grid-item">Boots</div>
-    	</div>
+    		<div class="grid-container">
+        		<div class="grid-item"><b>Necklace</b>
+            		<select name="level" id="gear-level">
+            			<option>Lv 85</option>
+            			<option>Lv 90</option>
+            		</select>
+            	</div>
+        		<div class="grid-item"><b>Ring</b>
+            		<select name="level" id="gear-level">
+            			<option>Lv 85</option>
+            			<option>Lv 90</option>
+            		</select>
+            	</div>
+        		<div class="grid-item"><b>Boots</b>
+            		<select name="level" id="gear-level">
+            			<option>Lv 85</option>
+            			<option>Lv 90</option>
+            		</select>
+            	</div>
+    		</div>
     	<!--For TotalStats-->
-    	<div class="grid-container">
-        	<div class="grid-item">Base Stats</div>
-        	<div class="grid-item">Final Stats</div>
-   		</div>
-    </div>
+    		<div class="grid-container">
+        		<div class="grid-item"><b>Base Stats</b></div>
+        		<div class="grid-item"><b>Final Stats</b></div>
+   			</div>
+    	</div>
 </body>
